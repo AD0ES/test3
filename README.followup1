@@ -1,0 +1,31 @@
+devbox:~/git/test3/test3$ ls
+README.md
+devbox:~/git/test3/test3$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+devbox:~/git/test3/test3$ git commit -am "commit the first modification of README.md on the development box."
+[master 825a842] commit the first modification of README.md on the development box.
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+ rewrite README.md (100%)
+devbox:~/git/test3/test3$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+devbox:~/git/test3/test3$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 626 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To smp@lapu:/gitroot/test3.git
+   677eebe..825a842  master -> master
